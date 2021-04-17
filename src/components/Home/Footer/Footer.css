@@ -1,0 +1,21 @@
+.footer-area{
+    /* background-image: url(../../../images/happy-female-professional-glasses-suit-holding-tablet-making-winner-gesture-while-two-businessmen-working-glass-wall-copy-space-communication-concept.jpg); */
+    background-size: cover;
+}
+
+.footer-area li{
+    padding-bottom: 10px;
+}
+
+.social-media .icon{
+    height: 40px;
+    width: 40px;
+    color: black;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 10px;
+}
+.social-media .active-icon{
+    background-color: black ;
+    color:white;
+}

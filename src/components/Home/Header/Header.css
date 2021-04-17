@@ -1,0 +1,21 @@
+.header-container {
+    height:800px;
+    position:relative;
+     /* background-image: url('../../../images/law\ bell.jpg');  */
+    /* opacity: 0.3;  */
+    background-size: cover;
+    
+
+}
+ /* .header-container::before {
+    height:450px;
+    content:' ';
+    position: absolute;
+    top: 0;
+    width: 40%;
+    left: 10;
+   background-color: rosybrown;
+     background-image: url('../../../images/law\ bell.jpg');  
+     opacity: 0.3;  
+    z-index: -50;
+}  */

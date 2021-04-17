@@ -1,0 +1,25 @@
+/* .make-appointment{
+    background-image: url(../../../images/will\ law.jpg);
+    background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* position: relative;
+    height: 200px;
+    background-position: center center;
+}
+
+.make-appointment::before{
+    content:  "";
+    display: block;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    background: rgb(36, 41, 73);
+    opacity: .8;
+    top: 0;
+}
+
+.make-appointment img{
+    height: 200px;
+    transform: translateY(-130px);
+} */
+
