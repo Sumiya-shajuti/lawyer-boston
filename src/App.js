@@ -78,7 +78,7 @@ function App() {
               </Route>
 
               {/* This is Clients Side */}
-              <Route path="/appointmentMain">
+              <Route path="/appointmentMain/:_id">
                 <AppointmentMain></AppointmentMain>
               </Route>
               <Route path="/clientBookingList">

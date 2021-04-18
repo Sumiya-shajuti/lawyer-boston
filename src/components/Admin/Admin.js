@@ -53,11 +53,11 @@ const Admin = () => {
                 <h2 className="brand">Lawyer In Boston</h2>
                 <a href="./adminOrderList">Order List</a>
                 <br />
-                <a href="./admin">Add Service</a>
+                <a href="/admin">Add Service</a>
                 <br />
-                <a href="./makeAdmin">Make admin</a>
+                <a href="/makeAdmin">Make admin</a>
                 <br />
-                <a href="./manageOrder">Manage Services</a>
+                <a href="/manageOrder">Manage Services</a>
             </div>
 
             {/*  Page content  */}
@@ -71,7 +71,7 @@ const Admin = () => {
                     <br />
                     <input name="cost" defaultValue="Cost" ref={register} />
                     <br />
-                                       <input name="exampleRequired" type="file" onChange={handleImageUpload} />
+                    <input name="exampleRequired" type="file" onChange={handleImageUpload} />
 
                     <input type="submit" /></form>
             </div>

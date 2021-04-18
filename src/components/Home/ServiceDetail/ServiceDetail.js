@@ -1,16 +1,13 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
-
+import { Link} from 'react-router-dom';
 
 const ServiceDetail = ({ service }) => {
-    const { _id } = useParams();
-    console.log(_id);
-    return (
+       return (
         <div className="col-md-4 text-center">
             <img style={{ height: '70px' }} src={service.imageURL} alt="" />
             <h5 className="mt-3 mb-3">{service.name}</h5>
             <p className="text-secondary">{service.description}</p>
-            <button className="btn btn-danger"> <Link to={`/appointmentMain/${_id}`}>Book</Link></button>
+            <button className="btn btn-danger"> <Link to={`/appointmentMain/${service._id}`}>Book</Link></button>
         </div>
     );
 };
