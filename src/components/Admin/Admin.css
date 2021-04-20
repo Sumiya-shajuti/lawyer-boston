@@ -1,13 +1,4 @@
-/* .main{
-    padding-left: 100px;
-  display: block;
-  background-color:gainsboro ;
- 
- }
- .brand{
-   color: aliceblue;
- } */
- /* .sidenav {
+  .sidenav {
     height: 100%;
     width: 200px;
     position: fixed;
@@ -17,23 +8,19 @@
     background-color: #111;
     overflow-x: hidden;
     padding-top: 20px;
-  }
+  } 
   
   .sidenav a {
     padding:" 6px 8px 6px 16px";
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #818181;
     display: block;
     margin-left: 15px;
   }
   
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: yellowgreen;
   }
   
-  .main {
-    margin-left: 2000px; 
-    font-size: 18px; 
-    padding: 0px 10px;
-  } */
+ 

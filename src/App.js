@@ -69,9 +69,9 @@ function App() {
               <Route path="/adminOrderList">
                 <AdminOrderList></AdminOrderList>
               </Route>
-              <Route path="/admin">
+              <PrivateRoute path="/admin">
                 <Admin></Admin>
-              </Route>
+              </PrivateRoute>
               <PrivateRoute path="/makeAdmin">
                 <MakeAdmin></MakeAdmin>
               </PrivateRoute>
@@ -80,11 +80,11 @@ function App() {
               </Route>
 
               {/* This is Clients Side */}
-              <Route path="/appointmentMain/:_id">
+              <PrivateRoute path="/appointmentMain/:_id">
                 <AppointmentMain></AppointmentMain>
-              </Route>
+              </PrivateRoute>
               <Route path="/clientBookingList">
-                <ClientBookingList></ClientBookingList>
+                <AdminOrderList></AdminOrderList>
               </Route>
               <Route path="/review">
                 <Review></Review>

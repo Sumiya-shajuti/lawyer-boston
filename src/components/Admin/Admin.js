@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
+import Sidebar from '../Shared/Sidebar/Sidebar';
 import './Admin.css'
 
 const Admin = () => {
@@ -47,22 +48,13 @@ const Admin = () => {
     }
     return (
 
-        <div>
-            {/*  Side navigation  */}
-            <div class="sidenav">
-                <h2 className="brand">Lawyer In Boston</h2>
-                <a href="./adminOrderList">Order List</a>
-                <br />
-                <a href="/admin">Add Service</a>
-                <br />
-                <a href="/makeAdmin">Make admin</a>
-                <br />
-                <a href="/manageService">Manage Service</a>
-              
+        <div className="row">
+
+            <div className="col-md-3">
+                <Sidebar></Sidebar>
             </div>
 
-            {/*  Page content  */}
-            <div class="main">
+            <div class=" col-md-3 main">
                 <h5>Add Service</h5>
                 <form onSubmit={handleSubmit(onSubmit)}>
 

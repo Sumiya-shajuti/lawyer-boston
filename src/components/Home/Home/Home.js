@@ -6,6 +6,7 @@ import Header from '../Header/Header';
 import MakeAppointment from '../MakeAppointment/MakeAppointment';
 import Services from '../Services/Services';
 import Testimonials from '../Testimonials/Testimonials';
+import Spring from '../../Spring/Spring'
 
 const Home = () => {
     return (

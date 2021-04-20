@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ManageService from '../ManageService/ManageService';
+import Sidebar from '../Shared/Sidebar/Sidebar';
 
 
 const Manage = () => {
@@ -14,12 +15,16 @@ console.log(services);
     }, [])
 
     return (
-        <div className="row-3">
+        <div className="row">
             
-            <h1>This is manage</h1>
-            {
+            <h1 >This is manage</h1>
+           
+            <div className="col-md-3 ">
+                        <Sidebar></Sidebar>
+                  </div>
+          <div className="col-md-9">  {
                 services.map(service =>< ManageService key={service} service={service}></ManageService>)
-            }
+            }</div>
         </div>
     );
 };

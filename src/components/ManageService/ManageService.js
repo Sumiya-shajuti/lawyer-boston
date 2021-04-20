@@ -16,20 +16,13 @@ const ManageService = ({ service }) => {
                   })
       }
       return (
-        <div> 
-                 {/* <Sidebar></Sidebar> */}
-            <div className="row">
-                  <div className="col-md-5">
-                        <h4> {service?.name}</h4>
-                  </div>
-                  <div className="col-md-3">
-                        <h3>{service?.cost}</h3>
-                  </div>
-                  <div className="col-md-4" >
-                        <button onClick={() => deleteService(service?._id)}>Delete</button>
-                  </div>
+
+            <div className="col-md-9">
+                  <h4> {service?.name}</h4>
+                  <h3>{service?.cost}</h3>
+                  <button onClick={() => deleteService(service?._id)}>Delete</button>
             </div>
-            </div>
+
       );
 };
 

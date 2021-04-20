@@ -1,3 +1,4 @@
+import { Button } from 'react-bootstrap';
 import React from 'react';
 import logo from '../../../images/logo.png'
 
@@ -6,7 +7,7 @@ const Navbar = () => {
     return (
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <div style={{height:'50px' ,width:'50px',marginLeft:'100px'}}>  <img className="img-fluid" src={logo} alt=""/></div>
+                <div style={{ height: '50px', width: '50px', marginLeft: '100px' }}>  <img className="img-fluid" src={logo} alt="" /></div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -24,15 +25,12 @@ const Navbar = () => {
                         <li class="nav-item">
                             <a class="nav-link ms-5 " href="/testimonials">Reviews</a>
                         </li>
-                        <li class="nav-item">
+                        {/* <li class="nav-item">
                             <a class="nav-link ms-5" href="/admin">Admin</a>
-                        </li>
+                        </li> */}
                         <li class="nav-item">
                             <a class="nav-link ms-5" href="/login">Log In</a>
                         </li>
-                        {/* <li class="nav-item">
-                            <a class="nav-link ms-5" href="#">Contact Us</a>
-                        </li> */}
                     </ul>
                 </div>
             </div>

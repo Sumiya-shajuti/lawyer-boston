@@ -10,9 +10,6 @@ const Testimonials = () => {
             .then(res => res.json())
             .then(data => setTestimonialData(data["from database"]))
     }, [])
-
-
-
     return (
         <section className="testimonial-container mt-5">
             <div className="text-center">

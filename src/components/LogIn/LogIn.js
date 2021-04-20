@@ -32,6 +32,7 @@ function LogIn() {
         const { displayName, email, password } = res.user;
         const signedInUser = { name: displayName, email, password }
         setLoggedInUser(signedInUser)
+        storeAuthToken()
         history.replace(from);
 
       })
@@ -120,6 +121,16 @@ function LogIn() {
       }
     }
   }
+
+const storeAuthToken =() =>{
+  firebase.auth().currentUser.getIdToken(/* forceRefresh */ true)
+  .then(function(idToken) {
+  sessionStorage.setItem('token',idToken);
+  }).catch(function(error) {
+    // Handle error
+  });
+}
+
   return (
     <div className="App">
 

@@ -7,7 +7,7 @@ const Services = () => {
     useEffect(() => {
         fetch('https://fathomless-stream-45638.herokuapp.com/services')
             .then(res => res.json())
-            .then(data => setServiceData(data["from database"]))
+            .then(data => setServiceData(data))
     }, [])
     return (
         <section className="services-container mt-5">
