@@ -14,7 +14,7 @@ const Admin = () => {
             description: data.description,
             imageURL: imageURL
         };
-        const url = `http://localhost:5000/addServices`;
+        const url = `https://fathomless-stream-45638.herokuapp.com/addServices`;
 
         console.log(serviceData);
         fetch(url, {
@@ -57,7 +57,8 @@ const Admin = () => {
                 <br />
                 <a href="/makeAdmin">Make admin</a>
                 <br />
-                <a href="/manageOrder">Manage Services</a>
+                <a href="/manageService">Manage Service</a>
+              
             </div>
 
             {/*  Page content  */}

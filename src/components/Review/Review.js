@@ -1,77 +1,7 @@
-// import axios from 'axios';
-// import React, { useState } from 'react';
-// import { useForm } from "react-hook-form";
-// import './Review.css'
-
-// const Review = () => {
-//     const { register, handleSubmit, watch, errors } = useForm();
-//     const [imageURL, setIMageURL] = useState(null);
-
-//     const onSubmit = data => {
-//         const reviewData = {
-//             name: data.name,
-//             price: data.price,
-//             weight: data.weight,
-//             imageURL: imageURL
-//         };
-//         const url = ` http://localhost:5000/addReviews`;
-
-//         console.log(reviewData);
-//         fetch(url, {
-//             method: 'POST',
-//             headers: {
-//                 'content-type': 'application/json'
-//             },
-//             body: JSON.stringify(reviewData)
-//         })
-//             .then(res => console.log('server side response', res))
-//     };
-
-
-//     const handleImageUpload = review => {
-//         console.log(review.target.files[0])
-//         const imageData = new FormData();
-
-//          }
-//     return (
-
-//         <div>
-//             {/*  Side navigation  */}
-//             <div class="sidenav">
-//                 <h2 className="brand">Lawyer In Boston</h2>
-//                 <a href="./appointmentMain">Book</a>
-//                 <br />
-//                 <a href="./clientBookingList">Booking List</a>
-//                 <br />
-//                 <a href="./review">Review</a>
-//             </div>
-
-//             {/*  Page content  */}
-//             <div class="main">
-//                 <h5>Review</h5>
-//                 <form onSubmit={handleSubmit(onSubmit)}>
-
-//                     <input name="name" defaultValue="Name" ref={register} />
-//                     <br />
-//                     <input name="email" defaultValue="Email" ref={register} />
-//                     <br />
-//                     <input name="name" defaultValue="service" ref={register} />
-//                     <br />
-//                     <input name="cost" defaultValue="Cost" ref={register} />
-//                     <br />
-//                     <input type="submit" /></form>
-//             </div>
-//         </div>
-//     );
-// };
-
-
-// export default Review;
-
 import axios from 'axios';
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
-import Sidebar from '../Dashboard/Sidebar/Sidebar';
+import Sidebar from '../Shared/Sidebar/Sidebar';
 import './Review.css'
 
 const Review = () => {
@@ -85,7 +15,7 @@ const Review = () => {
             description: data.description,
             imageURL: imageURL
         };
-        const url = `http://localhost:5000/addReviews`;
+        const url = `https://fathomless-stream-45638.herokuapp.com/addReviews`;
 
         console.log(reviewData);
         fetch(url, {
@@ -96,6 +26,8 @@ const Review = () => {
             body: JSON.stringify(reviewData)
         })
             .then(res => console.log('server side response', res))
+           
+                alert ('Review Added Successfully!')
     };
 
 
@@ -117,14 +49,14 @@ const Review = () => {
     }
     return (
 
-        <div>
+        <div className="row">
             {/*  Side navigation  */}
-            <div class="sidenav">
+            <div className="col-md-3">
                 <Sidebar></Sidebar>
             </div>
 
             {/*  Page content  */}
-            <div class="main">
+            <div className="col-md-9">
                 <h5>Add Service</h5>
                 <form onSubmit={handleSubmit(onSubmit)}>
 

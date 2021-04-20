@@ -14,15 +14,16 @@ import Admin from './components/Admin/Admin';
 import AppointmentMain from './components/AppointmentMain/AppointmentMain';
 import AdminOrderList from './components/AdminOrderList/AdminOrderList';
 import MakeAdmin from './components/MakeAdmin/MakeAdmin';
-import ManageOrder from './components/ManageOrder/ManageOrder';
 import ClientBookingList from './components/ClientBookingList/ClientBookingList';
 import Review from './components/Review/Review';
 import MakeAppointment from './components/Home/MakeAppointment/MakeAppointment';
 import Testimonials from './components/Home/Testimonials/Testimonials';
 import Navbar from './components/Shared/Navbar/Navbar';
 import NotFound from './components/NotFound/NotFound';
-import Order from './components/Order/Order';
-import Sidebar from './components/Dashboard/Sidebar/Sidebar';
+import Sidebar from './components/Shared/Sidebar/Sidebar';
+import ManageService from './components/ManageService/ManageService';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute'
+import Manage from './components/Manage/Manage';
 
 export const UserContext = createContext();
 function App() {
@@ -30,6 +31,7 @@ function App() {
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <h1>{loggedInUser.name}</h1>
+     
       <div>
         <div className="Header">
 
@@ -70,11 +72,11 @@ function App() {
               <Route path="/admin">
                 <Admin></Admin>
               </Route>
-              <Route path="/makeAdmin">
+              <PrivateRoute path="/makeAdmin">
                 <MakeAdmin></MakeAdmin>
-              </Route>
-              <Route path="/ manageOrder">
-                < ManageOrder></ManageOrder>
+              </PrivateRoute>
+              <Route path="/manageService">
+                <Manage></Manage>
               </Route>
 
               {/* This is Clients Side */}

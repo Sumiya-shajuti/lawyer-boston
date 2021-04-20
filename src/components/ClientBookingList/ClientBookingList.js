@@ -5,9 +5,8 @@ import { UserContext } from '../../App';
 const ClientBookingList = () => {
     const [ordered, setOrdered] = useState([]);
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-    console.log(loggedInUser.email);
-    useEffect(() => {
-        fetch('http://localhost:5000/ordered?email=' + loggedInUser.email, {
+      useEffect(() => {
+        fetch('https://fathomless-stream-45638.herokuapp.com/ordered?email=' + loggedInUser.email, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -20,9 +19,9 @@ const ClientBookingList = () => {
 
     return (
         <div>
-            <h3>You have: {ordered.length} ordered products</h3>
+            <h3>You have: {ordered.length}Appointment</h3>
             {
-                ordered.map(order => <li _id={order._id}>{order.name} {order.orderTime} </li>)
+                ordered.map(service => <li _id={service._id}>{service.name} {service.orderTime} </li>)
             }
         </div>
     );

@@ -12,7 +12,7 @@
 //     const [loggedInUser, setLoggedInUser] = useContext
 //         (UserContext);
 //     useEffect(() => {
-//           fetch(`http://localhost:5000/addAppointment/${_id}`)
+//           fetch(`https://fathomless-stream-45638.herokuapp.com//addAppointment/${_id}`)
 //             .then(res => res.json())
 //             .then(data => {
 //               setservice(data,"data");
@@ -30,7 +30,7 @@
 //         setservice(newOrder)
 
 //         console.log(newOrder);
-//         fetch('http://localhost:5000/appointment', {
+//         fetch('https://fathomless-stream-45638.herokuapp.com//appointment', {
 //             method: 'POST',
 //             headers: { 'Content-Type': 'application/json' },
 //             body: JSON.stringify(newOrder)

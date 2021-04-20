@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import judicial from '../../../images/judicial.png';
-import law from '../../../images/work permit.png';
-import family from '../../../images/family.png';
 import ServiceDetail from '../ServiceDetail/ServiceDetail';
 
 const Services = () => {
 
     const [serviceData, setServiceData] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://fathomless-stream-45638.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setServiceData(data["from database"]))
     }, [])

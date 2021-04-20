@@ -2,13 +2,14 @@
 import { useForm } from 'react-hook-form';
 import { UserContext } from '../../App';
 import Navbar from '../Shared/Navbar/Navbar';
+import Sidebar from '../Shared/Sidebar/Sidebar';
 const MakeAdmin = () => {
              
     const { register, handleSubmit, errors } = useForm();
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
     const onSubmit = data => {
-        fetch('http://localhost:5000/makeAdmin',{
+        fetch('https://fathomless-stream-45638.herokuapp.com/makeAdmin',{
             method: 'POST',
             headers: {'content-type': 'application/json'},
             body: JSON.stringify(data)
@@ -22,7 +23,7 @@ const MakeAdmin = () => {
     return (
         <div className="row container-fluid">
             <div className="col-md-2">
-                <Navbar></Navbar>
+               <Sidebar></Sidebar>
             </div>
             <div className="col-md-10">
                
