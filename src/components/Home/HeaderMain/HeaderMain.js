@@ -22,6 +22,7 @@ const HeaderMain = () => {
                 <p>We Help You Find The Right Lawyer In Boston By Matching
  Your Issue With Our Carefully Selected Expert Lawyers</p>
                 <button className="btn btn-danger">BOOK APPOINTMENT </button>
+                <Spring></Spring>
             </div>
             <div className="col-md-6">
                 <img src={bannar} alt="" className="img-fluid" />

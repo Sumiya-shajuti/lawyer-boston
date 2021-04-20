@@ -20,7 +20,7 @@ const AppointmentMain = () => {
             .then(res => res.json())
             .then(data => {
                 setService(data);
-                alert('Appointment Successful!')
+                // alert('Appointment Successful!')
 
             })
     }, [_id])
