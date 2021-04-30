@@ -6,9 +6,11 @@
 
 This is a lawyer service type website where people are able to get any help that is law-related.
 Live Website
+
+
  
  
-Features
+*Features
 
 Book Appointment from the services
 
@@ -23,7 +25,8 @@ Admin is able to see all clients current service status
 Admin is also able to see  remove any service in this website
 
 
-Front-end Technology :
+
+*Front-end Technology :
 
 React.js
 
@@ -32,7 +35,8 @@ Bootstrap5
 CSS3
 
 
-Backend Technology
+
+*Backend Technology
 
 Node.js
 
