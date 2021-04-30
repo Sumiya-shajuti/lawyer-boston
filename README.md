@@ -9,22 +9,38 @@ Live Website
  
  
 Features
+
 Book Appointment from the services
+
 Sign Up to get an appointment
+
 Pay online using your credit card
+
 Clients are able to give reviews.
+
 Admin is able to see all clients current service status
+
 Admin is also able to see  remove any service in this website
 
+
 Front-end Technology :
+
 React.js
+
 Bootstrap5
+
 CSS3
 
+
 Backend Technology
+
 Node.js
+
 Express.js
+
 MongoDB
+
 Firebase Authentication
+
 Stripe.js
 
