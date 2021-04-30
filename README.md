@@ -18,7 +18,7 @@
     
     Front-end Technology :
     React.js
-    Bootstrap4
+    Bootstrap5
     CSS3
     
     Backend Technology
